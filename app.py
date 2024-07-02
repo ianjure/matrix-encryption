@@ -42,7 +42,9 @@ alphabet_letter_to_number = {" ":0,
                             "8":35,
                             "9":36,
                             "!":37,
-                            "?":38
+                            "?":38,
+                            "(":39,
+                            ")":40
                             }
 
 alphabet_number_to_letter = {"0":" ",
@@ -83,7 +85,9 @@ alphabet_number_to_letter = {"0":" ",
                             "35":"8",
                             "36":"9",
                             "37":"!",
-                            "38":"?"
+                            "38":"?",
+                            "39":"(",
+                            "40":")"
                             }
 
 # THE INVERTIBLE MATRIX THAT WE WILL USE TO ENCRYPT THE MESSAGE
