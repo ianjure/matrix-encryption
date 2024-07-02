@@ -44,7 +44,9 @@ alphabet_letter_to_number = {" ":0,
                             "!":37,
                             "?":38,
                             "(":39,
-                            ")":40
+                            ")":40,
+                             ".":41,
+                             ",":42
                             }
 
 alphabet_number_to_letter = {"0":" ",
@@ -88,6 +90,9 @@ alphabet_number_to_letter = {"0":" ",
                             "38":"?",
                             "39":"(",
                             "40":")"
+                             "41":".",
+                             "42":","
+                             
                             }
 
 # THE INVERTIBLE MATRIX THAT WE WILL USE TO ENCRYPT THE MESSAGE
@@ -97,10 +102,6 @@ inverse_key_matrix = inv(key_matrix)
 
 def encrypt(message):
     # REPLACE PERIODS AND COMMAS WITH BLANK, CONVERT STRING TO UPPERCASE
-    text = message.replace('.', '')
-    text = message.replace(',', '')
-    text = message.replace('-', '')
-    text = message.replace("'", '')
     text = message.upper()
 
     # CONVERT TEXT TO LIST OF INTEGERS
