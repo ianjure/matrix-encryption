@@ -95,6 +95,8 @@ def encrypt(message):
     # REPLACE PERIODS AND COMMAS WITH BLANK, CONVERT STRING TO UPPERCASE
     text = message.replace('.', '')
     text = message.replace(',', '')
+    text = message.replace('-', '')
+    text = message.replace("'", '')
     text = message.upper()
 
     # CONVERT TEXT TO LIST OF INTEGERS
